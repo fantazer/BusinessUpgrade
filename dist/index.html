@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<!--create by ANATOLY KUZNETSOV-->
+<!--contact mail:kuznecovs45@gmail.com skype:an_kuznetcov-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--colors-tabs-->
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!--SEO-->
+    <title>Document</title>
+    <meta name="description" itemprop="description" content="" />
+    <link rel="stylesheet" href="./css/vendor.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<!--+checkbox('Выбрать пункт 1',"checked",'disable')-->
+<!--+radio('Выбрать пункт 1',"list","true",'disable')-->
+
+<body>
+    <div class="b-wrap-cont">
+        <!-- На сайте Шапка и футер уже есть-->
+        <!-- В скриптах подлючается jquery если в проекте он уже есть не подлючай-->
+        <!-- Чтобы не было конфликтов стилей у блоков будет префикс "b-"-->
+        <!-- В обертке .b-wrap-cont глобально подлючен шрифт "PT Sans" в файлах он не подлючается, для работы бери все что лежит внутри этого блока-->
+        <div class="b-section">
+            <div class="b-main-cont">
+                <div class="b-about">
+                    <a class="b-about__el" href="#" style="background-image:url('img/item-1.jpg')">
+                        <div class="b-filter"></div>
+                        <div class="b-about__el-info">
+                            <span>Разрабатываем и внедряем бизнес-процессы</span>
+                        </div>
+                    </a>
+                    <a class="b-about__el" href="#" style="background-image:url('img/item-2.jpg')">
+                        <div class="b-filter"></div>
+                        <div class="b-about__el-info">
+                            <span>Внедряем 1С:Битрикс24</span>
+                        </div>
+                    </a>
+                    <a class="b-about__el" href="#" style="background-image:url('img/item-3.jpg')">
+                        <div class="b-filter"></div>
+                        <div class="b-about__el-info">
+                            <span>Предоставляем лицензии</span>
+                        </div>
+                    </a>
+                    <a class="b-about__el" href="#" style="background-image:url('img/item-4.jpg')">
+                        <div class="b-filter"></div>
+                        <div class="b-about__el-info">
+                            <span>Настраиваем обмен 1С и CRM</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="b-order-wrap">
+            <div class="b-main-cont">
+                <div class="b-title b-title--white b-title--sm">Нужна помощь в подборе CRM?</div>
+                <div class="b-order">
+                    <div class="b-input-row b-input-row--error">
+                        <input class="b-input" type="text" placeholder="Ваше имя" />
+                        <div class="b-error-msg">данные не подходят</div>
+                    </div>
+                    <div class="b-input-row">
+                        <input class="b-input" type="text" placeholder="Телефон" />
+                    </div>
+                    <div class="b-input-row">
+                        <input class="b-input" type="text" placeholder="Почта" />
+                    </div>
+                    <div class="b-input-row">
+                        <input class="b-btn--md b-btn--mark" type="submit" value="Отправить" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-section">
+            <div class="b-main-cont">
+                <div class="b-title">Возможности для клиента</div>
+                <div class="b-advant">
+                    <div class="b-advant__el">
+                        <div class="b-advant__el-img">
+                            <div class="b-advant__el-icon">
+                                <img src="img/tools.svg" alt="" />
+                            </div>
+                            <div class="b-advant__el-figure">
+                                <img src="img/hexagon.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="b-advant__el-title">Настройка CRM</div>
+                    </div>
+                    <div class="b-advant__el">
+                        <div class="b-advant__el-img">
+                            <div class="b-advant__el-icon">
+                                <img src="img/config.svg" alt="" />
+                            </div>
+                            <div class="b-advant__el-figure">
+                                <img src="img/hexagon-rotate.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="b-advant__el-title">Настройка 1C</div>
+                    </div>
+                    <div class="b-advant__el">
+                        <div class="b-advant__el-img">
+                            <div class="b-advant__el-icon">
+                                <img src="img/ingtergration.svg" alt="" />
+                            </div>
+                            <div class="b-advant__el-figure">
+                                <img src="img/hexagon.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="b-advant__el-title">Интеграция 1C и CRM</div>
+                    </div>
+                    <div class="b-advant__el">
+                        <div class="b-advant__el-img">
+                            <div class="b-advant__el-icon">
+                                <img src="img/payment.svg" alt="" />
+                            </div>
+                            <div class="b-advant__el-figure">
+                                <img src="img/hexagon-rotate.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="b-advant__el-title">Оплата лицензий</div>
+                    </div>
+                    <div class="b-advant__el">
+                        <div class="b-advant__el-img">
+                            <div class="b-advant__el-icon">
+                                <img src="img/partners.svg" alt="" />
+                            </div>
+                            <div class="b-advant__el-figure">
+                                <img src="img/hexagon.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="b-advant__el-title">Партнёрская программа</div>
+                    </div>
+                    <div class="b-advant__el">
+                        <div class="b-advant__el-img">
+                            <div class="b-advant__el-icon">
+                                <img src="img/graf.svg" alt="" />
+                            </div>
+                            <div class="b-advant__el-figure">
+                                <img src="img/hexagon-rotate.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="b-advant__el-title">Акции</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-section b-section--gray">
+            <div class="b-main-cont">
+                <div class="b-title">Наши продукты</div>
+                <div class="b-slider-wrap b-slider-wrap--simple">
+                    <div class="b-slider-control b-slider-control--left">
+                        <img src="img/arrow-left.svg" alt="" />
+                    </div>
+                    <div class="b-slider-control b-slider-control--right">
+                        <img src="img/arrow-right.svg" alt="" />
+                    </div>
+                    <div class="b-slider-item b-slider-items">
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-product__el">
+                                <div class="b-slider-product__el-img" style="background-image:url('img/product-1.png')"></div>
+                                <div class="b-slider-product__el-info">
+                                    <div class="b-slider-product__el-title">Битрикс24 облачная версия</div>
+                                    <div class="b-slider-product__el-text">
+                                        <img src="img/check-green.svg" alt="" />
+                                        <span>в наличии</span>
+                                    </div>
+                                    <div class="b-slider-product__el-cost">от 990 р/мес</div>
+                                    <a class="b-slider-product__el-get" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-product__el">
+                                <div class="b-slider-product__el-img" style="background-image:url('img/product-2.png')"></div>
+                                <div class="b-slider-product__el-info">
+                                    <div class="b-slider-product__el-title">Битрикс24 облачная версия облачная версия</div>
+                                    <div class="b-slider-product__el-text">
+                                        <img src="img/check-green.svg" alt="" />
+                                        <span>в наличии</span>
+                                    </div>
+                                    <div class="b-slider-product__el-cost">от 990 р/мес</div>
+                                    <a class="b-slider-product__el-get" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-product__el">
+                                <div class="b-slider-product__el-img" style="background-image:url('img/product-1.png')"></div>
+                                <div class="b-slider-product__el-info">
+                                    <div class="b-slider-product__el-title">Битрикс24 облачная версия</div>
+                                    <div class="b-slider-product__el-text">
+                                        <img src="img/check-green.svg" alt="" />
+                                        <span>в наличии</span>
+                                    </div>
+                                    <div class="b-slider-product__el-cost">от 990 р/мес</div>
+                                    <a class="b-slider-product__el-get" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-product__el">
+                                <div class="b-slider-product__el-img" style="background-image:url('img/product-2.png')"></div>
+                                <div class="b-slider-product__el-info">
+                                    <div class="b-slider-product__el-title">Битрикс24 облачная версия облачная версия</div>
+                                    <div class="b-slider-product__el-text">
+                                        <img src="img/check-green.svg" alt="" />
+                                        <span>в наличии</span>
+                                    </div>
+                                    <div class="b-slider-product__el-cost">от 990 р/мес</div>
+                                    <a class="b-slider-product__el-get" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-product__el">
+                                <div class="b-slider-product__el-img" style="background-image:url('img/product-1.png')"></div>
+                                <div class="b-slider-product__el-info">
+                                    <div class="b-slider-product__el-title">Битрикс24 облачная версия</div>
+                                    <div class="b-slider-product__el-text">
+                                        <img src="img/check-green.svg" alt="" />
+                                        <span>в наличии</span>
+                                    </div>
+                                    <div class="b-slider-product__el-cost">от 990 р/мес</div>
+                                    <a class="b-slider-product__el-get" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-product__el">
+                                <div class="b-slider-product__el-img" style="background-image:url('img/product-2.png')"></div>
+                                <div class="b-slider-product__el-info">
+                                    <div class="b-slider-product__el-title">Битрикс24 облачная версия облачная версия</div>
+                                    <div class="b-slider-product__el-text">
+                                        <img src="img/check-green.svg" alt="" />
+                                        <span>в наличии</span>
+                                    </div>
+                                    <div class="b-slider-product__el-cost">от 990 р/мес</div>
+                                    <a class="b-slider-product__el-get" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-section">
+            <div class="b-main-cont">
+                <div class="b-title">Компания «BusinessUpgrade» —
+                    <br>это команда профессионалов своего дела!</div>
+                <div class="b-team">
+                    <div class="b-team__el">
+                        <div class="b-team__el-img">
+                            <img src="img/analisis.svg" alt="" />
+                        </div>
+                        <div class="b-team__el-text">Бизнес-аналитики</div>
+                    </div>
+                    <div class="b-team__el">
+                        <div class="b-team__el-img">
+                            <img src="img/prog.svg" alt="" />
+                        </div>
+                        <div class="b-team__el-text">Программисты 1C:Битрикс24</div>
+                    </div>
+                    <div class="b-team__el">
+                        <div class="b-team__el-img">
+                            <img src="img/advant.svg" alt="" />
+                        </div>
+                        <div class="b-team__el-text">Системные администраторы</div>
+                    </div>
+                    <div class="b-team__el">
+                        <div class="b-team__el-img">
+                            <img src="img/chat.svg" alt="" />
+                        </div>
+                        <div class="b-team__el-text">Специалисты по обучению сотрудников</div>
+                    </div>
+                    <div class="b-team__el">
+                        <div class="b-team__el-img">
+                            <img src="img/call-info.svg" alt="" />
+                        </div>
+                        <div class="b-team__el-text">Специалисты технической поддержки Битрикс24</div>
+                    </div>
+                    <div class="b-team__el">
+                        <div class="b-team__el-img">
+                            <img src="img/web.svg" alt="" />
+                        </div>
+                        <div class="b-team__el-text">Программисты 1С</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-section b-section--gray">
+            <div class="b-main-cont">
+                <div class="b-title">Наши клиенты</div>
+                <div class="b-slider-wrap b-slider-wrap--simple">
+                    <div class="b-slider-control b-slider-control--left">
+                        <img src="img/arrow-left.svg" alt="" />
+                    </div>
+                    <div class="b-slider-control b-slider-control--right">
+                        <img src="img/arrow-right.svg" alt="" />
+                    </div>
+                    <div class="b-slider-item b-slider-items">
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-client__el">
+                                <div class="b-slider-client__el-img" style="background-image:url('img/partner-logo-1.png')"></div>
+                                <div class="b-slider-client__el-info">Герой сегодняшней подборки - американский музыкант сицилийского происхождения Салли Эрна (р. 1968 г.), вокалист и мультиинструменталист (гитарист, клавишник, ударник). Наиболее известен широкой публике как бессменный лидер
+                                    группы Godsmack. Подборки с творчеством данного коллектива я ранее уже выкладывал. Но в этой будут песни из сольного пр.. екта Эрны. В проекте имени себя Салли Эрна исполняет музыку б</div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-client__el">
+                                <div class="b-slider-client__el-img" style="background-image:url('img/partner-logo-2.png')"></div>
+                                <div class="b-slider-client__el-info">Герой сегодняшней подборки - американский музыкант сицилийского происхождения Салли Эрна (р. 1968 г.), вокалист и мультиинструменталист (гитарист, клавишник, ударник). Наиболее известен широкой публике как бессменный лидер
+                                    группы Godsmack. Подборки с творчеством данного коллектива я ранее уже выкладывал.</div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-client__el">
+                                <div class="b-slider-client__el-img" style="background-image:url('img/partner-logo-1.png')"></div>
+                                <div class="b-slider-client__el-info">Герой сегодняшней подборки - американский музыкант сицилийского происхождения Салли Эрна (р. 1968 г.), вокалист и мультиинструменталист (гитарист, клавишник, ударник). Наиболее известен широкой публике как бессменный лидер
+                                    группы Godsmack. Подборки с творчеством данного коллектива я ранее уже выкладывал. Но в этой будут песни из сольного пр.. екта Эрны. В проекте имени себя Салли Эрна исполняет музыку б</div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-client__el">
+                                <div class="b-slider-client__el-img" style="background-image:url('img/partner-logo-2.png')"></div>
+                                <div class="b-slider-client__el-info">Герой сегодняшней подборки - американский музыкант сицилийского происхождения Салли Эрна (р. 1968 г.), вокалист и мультиинструменталист (гитарист, клавишник, ударник). Наиболее известен широкой публике как бессменный лидер
+                                    группы Godsmack. Подборки с творчеством данного коллектива я ранее уже выкладывал.</div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-client__el">
+                                <div class="b-slider-client__el-img" style="background-image:url('img/partner-logo-1.png')"></div>
+                                <div class="b-slider-client__el-info">Герой сегодняшней подборки - американский музыкант сицилийского происхождения Салли Эрна (р. 1968 г.), вокалист и мультиинструменталист (гитарист, клавишник, ударник). Наиболее известен широкой публике как бессменный лидер
+                                    группы Godsmack. Подборки с творчеством данного коллектива я ранее уже выкладывал. Но в этой будут песни из сольного пр.. екта Эрны. В проекте имени себя Салли Эрна исполняет музыку б</div>
+                            </div>
+                        </div>
+                        <div class="b-slider-el-wrap">
+                            <div class="b-slider-client__el">
+                                <div class="b-slider-client__el-img" style="background-image:url('img/partner-logo-2.png')"></div>
+                                <div class="b-slider-client__el-info">Герой сегодняшней подборки - американский музыкант сицилийского происхождения Салли Эрна (р. 1968 г.), вокалист и мультиинструменталист (гитарист, клавишник, ударник). Наиболее известен широкой публике как бессменный лидер
+                                    группы Godsmack. Подборки с творчеством данного коллектива я ранее уже выкладывал.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-section">
+            <div class="b-main-cont">
+                <div class="b-title">Что мы вам готовы дать</div>
+                <div class="provide">
+                    <div class="provide__el">
+                        <div class="provide__el-img">
+                            <img src="img/control.png" alt="" />
+                        </div>
+                        <div class="provide__el-info">
+                            <div class="provide__el-title">Увеличение контроля процессов компании</div>
+                            <div class="provide__el-list">
+                                <div class="provide__el-list__el">автоматизация отчетов</div>
+                                <div class="provide__el-list__el">контроль KPI сотрудников</div>
+                                <div class="provide__el-list__el">контроль исполнения задач</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provide__el">
+                        <div class="provide__el-img">
+                            <img src="img/money.png" alt="" />
+                        </div>
+                        <div class="provide__el-info">
+                            <div class="provide__el-title">Увеличение прибыли компаний</div>
+                            <div class="provide__el-list">
+                                <div class="provide__el-list__el">автоматизация маркетинга</div>
+                                <div class="provide__el-list__el">контроль работы продавцов</div>
+                                <div class="provide__el-list__el">работа со всеми обращениями клиентов в одном месте</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provide__el">
+                        <div class="provide__el-img">
+                            <img src="img/robot.png" alt="" />
+                        </div>
+                        <div class="provide__el-info">
+                            <div class="provide__el-title">Высвобождение времени менеджеров</div>
+                            <div class="provide__el-list">
+                                <div class="provide__el-list__el">автоматизация рутинных процессов</div>
+                                <div class="provide__el-list__el">автоматизация документооборота</div>
+                                <div class="provide__el-list__el">автоматизация воронки продаж</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provide__el">
+                        <div class="provide__el-img">
+                            <img src="img/marketing.png" alt="" />
+                        </div>
+                        <div class="provide__el-info">
+                            <div class="provide__el-title">Увеличение эффективности маркетинга</div>
+                            <div class="provide__el-list">
+                                <div class="provide__el-list__el">настройка сквозной аналитики</div>
+                                <div class="provide__el-list__el">подключение колл-трекинга</div>
+                                <div class="provide__el-list__el">контроль ЛИДогенерации в одном месте</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-order-wrap b-order-wrap--dark">
+            <div class="b-main-cont">
+                <div class="b-title b-title--white b-title--sm">Работающая CRM уже через 14 дней</div>
+                <div class="b-order">
+                    <div class="b-input-row">
+                        <input class="b-input" type="text" placeholder="Ваше имя" />
+                    </div>
+                    <div class="b-input-row">
+                        <input class="b-input" type="text" placeholder="Телефон" />
+                    </div>
+                    <div class="b-input-row">
+                        <input class="b-input" type="text" placeholder="Почта" />
+                    </div>
+                    <div class="b-input-row">
+                        <input class="b-btn--md b-btn--mark" type="submit" value="Отправить" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/combined.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
