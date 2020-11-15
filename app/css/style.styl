@@ -1,0 +1,403 @@
+@import 'rupture'
+@import "variable/_function.styl"
+@import "variable/_default.styl"
+
+
+
+// constant
+$mark = #0082ed
+.b-input
+	padding 10px 20px
+	border 1px solid $border-color
+	resize: none
+	outline: 0 !important
+	display block!important
+	placeholder(#888888)
+	background: #f6f6f6
+	tr(all)
+	line-height: 1.6
+	&:focus
+		background: white
+.b-input-row
+	position relative
+	margin-bottom: 20px
+	.b-input
+		width: 100%
+	.b-btn--md
+		width: 100%
+.b-input-row--error
+	+below(640px)
+		margin-bottom: 10px
+	.b-input
+		border-color red
+		color red
+	.b-error-msg
+		color red
+		display block
+
+.error-msg
+	color $stateError
+	margin: 10px 0
+	display none
+
+.b-btn
+	br(4px)
+	tr(all)
+	display inline-block
+	background none
+	border 0
+	text-align: center
+	text-decoration: none
+	&:hover
+		cursor pointer
+
+.b-btn--md
+	@extend .b-btn
+	padding 14px 20px
+.b-btn--lg
+	@extend .b-btn
+	padding 14px 70px
+
+.b-btn--mark
+	@extend .b-btn
+	color white
+	background $mark
+	&:hover
+		background-color lighten($mark,10)
+		color white!important
+	&:active
+		background-color lighten($mark,10)
+	input[type="submit"]
+		border 0
+
+.type--md
+	+below(768px)
+		font-size: 18px
+	font-size: 24px
+// constant === end
+
+
+.b-wrap-cont
+	font-family "PT Sans"
+
+.b-main-cont
+	+below(768px)
+		font-size: 16px
+	center(1030px,10px)
+	line-height: 1.4
+	font-size: 18px
+.b-section
+	+below(768px)
+		padding: 40px 0
+	padding: 100px 0
+.b-section--gray
+	background: #f5f5f5
+//.b-wrap-cont
+.b-about
+	+below(640px)
+		grid-template-columns: 1fr
+		grid-gap 0
+	display: grid
+	grid-gap 10px
+	grid-template-columns: repeat(2, 1fr)
+.b-about__el
+	+below(1024px)
+		.b-filter
+			opacity: 0
+		.b-about__el-info
+			transform translateY(0px)
+			opacity: 1
+			span
+				background: #01395cc4
+	bg-full()
+	padding: 27% 10%
+	position relative
+	&:hover
+		.b-filter
+			opacity: .25
+		.b-about__el-info
+			transform translateY(0px)
+			opacity: 1
+.b-filter
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+	background: black
+	opacity: 0
+	tr()
+
+.b-about__el-info
+	tr()
+	opacity: 0
+	transform translateY(10px)
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+	flex(mid)
+	span
+		@extend .type--md
+		font-weight: 700
+		color white
+		text-align center
+		display inline-block
+		width: 80%
+		background: #000c
+		padding: 40px 10px
+.b-order-wrap
+	+below(640px)
+		padding: 40px 0
+	padding: 55px 0
+	background: #01395c
+.b-title
+	+below(768px)
+		margin-bottom: 40px
+		font-size: 24px
+	text-align center
+	font-weight: 700
+	margin-bottom: 65px
+	font-size: 30px
+.b-title--sm
+	margin-bottom: 30px
+.b-title--white
+	color white
+
+.b-order
+	+below(640px)
+		grid-template-columns: 1fr
+	display: grid
+	grid-column-gap 20px
+	grid-template-columns: repeat(4, 1fr)
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+
+.b-advant
+	+below(640px)
+		grid-template-columns: repeat(2, 1fr)
+		grid-row-gap 40px
+		grid-column-gap 20px
+	display: grid
+	grid-row-gap 80px
+	grid-column-gap 20px
+	grid-template-columns: repeat(3, 1fr)
+.b-advant__el
+	f()
+	align-items center
+	fl()
+.b-advant__el-img
+	position relative
+	margin-bottom: 50px
+.b-advant__el-icon
+	+below(640px)
+		size 60px
+	img
+		size 100px
+		z-index 3
+.b-advant__el-figure
+	+below(640px)
+		size 60px
+		top 0
+		right: -25px
+	position absolute
+	top -10px
+	right: -50%
+	z-index -1
+.b-advant__el-title
+	text-align center
+	@extend .type--md
+	font-weight: 700
+
+// slick
+//Навигация снаружи
+.b-slider-wrap--simple
+	position relative
+	.b-slider-control
+		+below(1200px)
+			display none
+		flex(mid)
+		tr(all)
+		size 40px
+		position: absolute
+		top 50%
+		margin-top: -20px
+		z-index 10
+		cp()
+		&:hover
+			background: $red
+			.icon
+				fill white
+	.b-slider-control--left
+		left -60px
+	.b-slider-control--right
+		right -60px
+//Навигация снаружи end
+
+//=== Внешний вид пагинации ===
+.slick-dots
+	+below(720px)
+		bottom -30px
+	width: 100%
+	display: flex !important
+	align-items: center
+	justify-content: center
+	bottom -50px
+	li
+		+below(720px)
+			size 10px
+			flex(mid)
+	.dot
+		+below(720px)
+			flex(mid)
+			size 10px
+		background: $mark
+		width: 24px
+		height: 8px
+		display: block
+		br(3px)
+		opacity: .2
+	.slick-active
+		.dot
+			opacity: 1
+//=== Внешний вид пагинации end===
+
+// === Отступы для для слайдов ===
+.slick-slide
+	margin: 0 15px
+.slick-list
+	margin: 0 -15px
+// === Отступы для для слайдов end ===
+// slick === end
+
+
+.b-slider-product__el
+	+below(640px)
+		padding: 30px 15px
+		fw()
+	padding: 25px 25px 40px 25px
+	background: white
+	f()
+	align-items: flex-start
+	height: 100%
+.b-slider-product__el-img
+	+below(640px)
+		width: 100%
+		margin 0 0 20px 0
+	bg-full()
+	background-size:contain
+	padding: 25% 10%
+	width: 40%
+	margin-right: 10%
+.b-slider-product__el-info
+	+below(640px)
+		width: 100%
+	f()
+	fl()
+	width: 50%
+	height: 100%
+.b-slider-product__el-title
+	@extend .type--md
+	font-weight: 700
+	margin-bottom: 20px
+.b-slider-product__el-text
+	f()
+	margin-bottom: 20px
+	img
+		margin-right: 10px
+.b-slider-product__el-cost
+	+below(640px)
+		margin-top: 0
+	@extend .type--md
+	font-weight: 700
+	margin-top: auto
+	margin-bottom: 20px
+.b-slider-product__el-get
+	+below(640px)
+		width: 100%
+	@extend .b-btn--lg
+	@extend .b-btn--mark
+
+.b-team
+	+below(640px)
+		grid-template-columns: repeat(2, 1fr)
+		grid-row-gap 20px
+		grid-column-gap 20px
+	display: grid
+	grid-row-gap 80px
+	grid-column-gap 80px
+	grid-template-columns: repeat(3, 1fr)
+.b-team__el
+	f()
+	align-items center
+	fl()
+	position relative
+	&:before
+		content ''
+		width: 100%
+		height: 50px
+		background: #e3f2ff
+		position absolute
+		top 25px
+		left 0
+		z-index -1
+		br(5px)
+		+below(640px)
+			height: 30px
+			top 15px
+.b-team__el-img
+	+below(640px)
+		size 60px
+	size 100px
+	margin-bottom: 30px
+	img
+		width: 100%
+.b-team__el-text
+	+below(640px)
+		font-size: 16px
+	text-align center
+	font-weight: 700
+	@extend .type--md
+.b-slider-client__el
+	padding: 20px
+	background: white
+	height: 100%
+.b-slider-client__el-img
+	padding: 5% 30%
+	background-repeat: no-repeat
+	margin-bottom: 20px
+	display: inline-block
+	background-size: contain
+.provide
+	+below(640px)
+		grid-template-columns: 1fr
+		grid-row-gap 30px
+	display: grid
+	grid-row-gap 110px
+	grid-column-gap 30px
+	grid-template-columns: repeat(2, 1fr)
+.provide__el
+	f()
+	align-items: flex-start
+.provide__el-img
+	width: 30%
+	margin-right: 30px
+.provide__el-info
+	width calc(70% - 20px)
+.provide__el-title
+	font-weight: 700
+	@extend .type--md
+	margin-bottom: 20px
+//.provide__el-list
+.provide__el-list__el
+	margin-bottom: 10px
+	position relative
+	padding-left: 10px
+	&:last-child
+		margin-bottom: 0
+	&:before
+		content '+'
+		position absolute
+		left -5px
+.b-order-wrap--dark
+	background: #565656
