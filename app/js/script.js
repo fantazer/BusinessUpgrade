@@ -37,9 +37,15 @@ $('.b-slider-items').slick({
 		$(this).closest(".b-slider-wrap").find(".b-slider-item").slick('slickPrev');
 	});
 	// custom arrow el === end
-
-
 // slider === end
 
+	AOS.init({
+ 	offset: 300,
+	 disable: 'mobile',
+	 disable: function () {
+			var maxWidth = 1024;
+			return window.innerWidth < maxWidth;
+		}
+	});
 
 });
