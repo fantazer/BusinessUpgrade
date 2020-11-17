@@ -86,7 +86,7 @@ body > svg {
 }
 .b-input {
   padding: 10px 20px;
-  border: 1px solid $border-color;
+  border: 1px solid #ececec;
   resize: none;
   outline: 0 !important;
   display: block !important;
@@ -268,28 +268,17 @@ body > svg {
   padding: 27% 10%;
   position: relative;
 }
-@media only screen and (max-width: 1024px) {
-  .b-about__el .b-filter {
-    opacity: 0;
-  }
-  .b-about__el .b-about__el-info {
-    -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-  .b-about__el .b-about__el-info span {
-    background: rgba(1,57,92,0.769);
-  }
+.b-about__el .b-filter {
+  opacity: 0;
 }
-.b-about__el:hover .b-filter {
-  opacity: 0.25;
-}
-.b-about__el:hover .b-about__el-info {
+.b-about__el .b-about__el-info {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
+}
+.b-about__el .b-about__el-info span {
+  background: rgba(1,57,92,0.769);
 }
 .b-filter {
   position: absolute;

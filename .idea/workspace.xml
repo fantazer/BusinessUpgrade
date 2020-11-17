@@ -16,15 +16,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="deploy version -remove fonts">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add animate on scroll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_script.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_script.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_style.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_style.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,14 +190,8 @@
       <workItem from="1605348852846" duration="28000" />
       <workItem from="1605433338285" duration="13308000" />
       <workItem from="1605519741438" duration="2275000" />
-      <workItem from="1605601805162" duration="1006000" />
-    </task>
-    <task id="LOCAL-00006" summary="fix bower.json">
-      <created>1539342810833</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1539342810833</updated>
+      <workItem from="1605601805162" duration="1195000" />
+      <workItem from="1605627877475" duration="358000" />
     </task>
     <task id="LOCAL-00007" summary="fix style modal">
       <created>1540312587482</created>
@@ -538,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605452369413</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="add animate on scroll">
+      <created>1605602843074</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1605602843074</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -591,7 +589,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix slide menu" />
     <MESSAGE value="fix btn + animateShow function" />
     <MESSAGE value="add input style" />
     <MESSAGE value="fix shrink" />
@@ -616,14 +613,15 @@
     <MESSAGE value="fix modal content" />
     <MESSAGE value="deploy version" />
     <MESSAGE value="deploy version -remove fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy version -remove fonts" />
+    <MESSAGE value="add animate on scroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="add animate on scroll" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1753" y="-40" key="CommitChangelistDialog2" timestamp="1605452368419">
+    <state x="-1753" y="-40" key="CommitChangelistDialog2" timestamp="1605602840684">
       <screen x="-2560" y="-193" width="2560" height="1400" />
     </state>
     <state x="-1753" y="-40" key="CommitChangelistDialog2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1605452368419" />
-    <state x="-1753" y="-40" key="CommitChangelistDialog2/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1604407708310" />
+    <state x="-1753" y="-40" key="CommitChangelistDialog2/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1605602840684" />
     <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1602233651659" />
     <state x="-1407" y="408" key="Github.ShareDialog" timestamp="1605452073084">
       <screen x="-2560" y="-193" width="2560" height="1400" />
@@ -638,11 +636,11 @@
     </state>
     <state x="-1779" y="150" key="SettingsEditor/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1605452040129" />
     <state x="-1779" y="87" key="SettingsEditor/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1599741730816" />
-    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2" timestamp="1605452371038">
+    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2" timestamp="1605602864093">
       <screen x="-2560" y="-193" width="2560" height="1400" />
     </state>
     <state x="-1959" y="128" key="Vcs.Push.Dialog.v2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1605452371038" />
-    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1604407711953" />
+    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1605602864093" />
     <state x="-1959" y="65" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1600361287895" />
     <state x="899" y="-823" width="763" height="527" key="find.popup" timestamp="1605181732502">
       <screen x="0" y="-1080" width="2560" height="1040" />
